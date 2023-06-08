@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  options {
+        checkoutToSubdirectory('foo')
+    }
   stages {
     stage('CheckoutGit') {
       steps {
