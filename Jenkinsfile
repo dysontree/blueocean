@@ -10,6 +10,11 @@ pipeline {
       }
     }
 
+     stage('CheckoutGitTest') {
+      steps {
+        git(branch: 'main', url: 'https://github.com/elestopadov/jenkins-example-app.git')
+      }
+    }
     stage('build') {
       steps {
         echo 'hello world'
