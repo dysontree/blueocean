@@ -1,4 +1,4 @@
-def git_change() {
+def change() {
 
 println("exampleMethod")
   
